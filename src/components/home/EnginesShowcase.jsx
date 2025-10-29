@@ -36,7 +36,7 @@ export default function EnginesShowcase() {
     {
       id: 1,
       title: 'Engine Inspection Process',
-      videoUrl: 'public/v1.mp4', // Replace with your server video path
+      videoUrl: 'images/v1.mp4', // Replace with your server video path
       thumbnail: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800',
       duration: '0:11',
       category: 'Quality Check'
@@ -44,7 +44,7 @@ export default function EnginesShowcase() {
     {
       id: 2,
       title: 'Transmission Assembly',
-      videoUrl: 'public/v1.mp4', // Replace with your server video path
+      videoUrl: 'images/v1.mp4', // Replace with your server video path
       thumbnail: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800',
       duration: '0:45',
       category: 'Assembly'
@@ -52,7 +52,7 @@ export default function EnginesShowcase() {
     {
       id: 3,
       title: 'Chevy Transmission',
-      videoUrl: 'public/v1.mp4', // Replace with your server video path
+      videoUrl: 'images/v1.mp4', // Replace with your server video path
       thumbnail: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800',
       duration: '0:30',
       label: 'Chevy Transmission',
@@ -61,7 +61,7 @@ export default function EnginesShowcase() {
     {
       id: 4,
       title: 'Engines For Days',
-      videoUrl: 'public/v1.mp4', // Replace with your server video path
+      videoUrl: 'images/v1.mp4', // Replace with your server video path
       thumbnail: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800',
       duration: '1:15',
       label: 'Engines For Days',
