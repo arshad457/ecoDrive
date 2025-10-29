@@ -1,0 +1,162 @@
+import React from 'react';
+import { Star, Quote, MoreVertical } from 'lucide-react';
+
+export default function CustomerReviews() {
+  
+  const reviews = [
+    {
+      id: 1,
+      name: 'Jessica Partices',
+      role: 'Creative Designer',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150',
+      rating: 5,
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, accusamus eveniet. ipsum dolor sit amet.'
+    },
+    {
+      id: 2,
+      name: 'Adam Jonson',
+      role: 'Writer Content',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
+      rating: 4.5,
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, accusamus eveniet.'
+    },
+    {
+      id: 3,
+      name: 'Maya Findish',
+      role: 'Hr Manager',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150',
+      rating: 4,
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, accusamus eveniet.'
+    },
+    {
+      id: 4,
+      name: 'John Smith',
+      role: 'Business Owner',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
+      rating: 5,
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, accusamus eveniet. ipsum dolor sit amet.'
+    },
+    {
+      id: 5,
+      name: 'Sarah Williams',
+      role: 'Marketing Director',
+      avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150',
+      rating: 5,
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, accusamus eveniet.'
+    },
+    {
+      id: 6,
+      name: 'Michael Chen',
+      role: 'Product Manager',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150',
+      rating: 4.5,
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, accusamus eveniet. ipsum dolor sit amet.'
+    }
+  ];
+
+  const renderStars = (rating) => {
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(
+        <Star key={`full-${i}`} className="w-5 h-5 sm:w-6 sm:h-6 fill-amber-500 text-amber-500" />
+      );
+    }
+
+    if (hasHalfStar) {
+      stars.push(
+        <Star key="half" className="w-5 h-5 sm:w-6 sm:h-6 fill-blue-300 text-blue-300" />
+      );
+    }
+
+    const emptyStars = 5 - Math.ceil(rating);
+    for (let i = 0; i < emptyStars; i++) {
+      stars.push(
+        <Star key={`empty-${i}`} className="w-5 h-5 sm:w-6 sm:h-6 fill-blue-200 text-blue-200" />
+      );
+    }
+
+    return stars;
+  };
+
+  return (
+    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-12 sm:py-16 md:py-20 px-4">
+      <div className="max-w-5xl mx-auto">
+        
+        {/* Header Section */}
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+            What Our Clients Say
+          </h2>
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+            Read testimonials from our satisfied customers who have experienced our exceptional service
+          </p>
+        </div>
+
+        {/* Reviews Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="bg-gray-800 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-6 sm:p-8 relative overflow-hidden group border border-gray-700 hover:border-blue-500"
+            >
+              {/* Background Gradient Overlay */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-transparent rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+              
+              {/* Quote Icon */}
+              <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Quote className="w-16 h-16 sm:w-20 sm:h-20 text-blue-400" />
+              </div>
+
+              {/* Menu Dots */}
+              <button className="absolute top-6 right-6 text-gray-500 hover:text-gray-300 transition-colors z-10">
+                <MoreVertical className="w-5 h-5" />
+              </button>
+
+              {/* Review Text */}
+              <div className="relative z-10 mb-6 sm:mb-8">
+                <p className="text-gray-300 text-sm sm:text-base leading-relaxed italic min-h-[100px] sm:min-h-[120px]">
+                  "{review.text}"
+                </p>
+              </div>
+
+              {/* Star Rating */}
+              <div className="flex justify-center gap-1 mb-6 sm:mb-8 relative z-10">
+                {renderStars(review.rating)}
+              </div>
+
+              {/* Divider */}
+              <div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-6"></div>
+
+              {/* User Info */}
+              <div className="flex items-center gap-4 relative z-10">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden border-4 border-blue-500/30 shadow-lg flex-shrink-0">
+                  <img
+                    src={review.avatar}
+                    alt={review.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h4 className="font-bold text-white text-base sm:text-lg truncate">
+                    {review.name}
+                  </h4>
+                  <p className="text-blue-400 text-sm sm:text-base font-medium truncate">
+                    {review.role}
+                  </p>
+                </div>
+              </div>
+
+              {/* Bottom Accent */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            </div>
+          ))}
+        </div>
+
+       
+      </div>
+    </div>
+  );
+}
