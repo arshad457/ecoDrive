@@ -48,12 +48,13 @@ export default function NewArrivalEngines() {
     try {
       // EmailJS Configuration
       // Sign up at https://www.emailjs.com/ and replace these values
-      const serviceID = 'YOUR_SERVICE_ID';
-      const templateID = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+     
+       const serviceID = 'service_dcx6xug';
+      const templateID = 'template_wtpuleq';
+      const publicKey = 'VMJq2h4guP5mag8sP';
 
       const emailData = {
-        to_email: 'info@swizzauto.com',
+        to_email: 'ankitchandel858790@gmail.com',
         from_name: formData.name,
         mobile: formData.mobile,
         product_name: selectedProduct?.name || 'General Inquiry',
@@ -361,7 +362,7 @@ export default function NewArrivalEngines() {
                     isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                   }`}
                 >
-                  {isSubmitting ? 'SENDING...' : 'ACTIVATE DISCOUNT'}
+                  {isSubmitting ? 'SENDING...' : 'Send Enquery'}
                 </button>
 
                 <button

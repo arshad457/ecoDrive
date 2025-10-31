@@ -135,7 +135,7 @@ Part: ${formData.part}`
       {/* Top Bar */}
       <div className="bg-gray-950 text-white py-3 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
-          <div className="flex flex-wrap gap-4 text-sm">
+          <div className="flex flex-wrap gap-4 text-sm ml-auto">
             <a href="tel:+18048006985" className="flex items-center gap-2 hover:text-amber-400 transition">
               <Phone size={16} />
               <span>Toll Free: +1-804-800-6985</span>
@@ -145,9 +145,9 @@ Part: ${formData.part}`
               <span>info@ecodriveautoparts.store</span>
             </a>
           </div>
-          <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-md text-sm font-semibold transition">
+          {/* <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-md text-sm font-semibold transition">
             Send Us Query
-          </button>
+          </button> */}
         </div>
       </div>
 
