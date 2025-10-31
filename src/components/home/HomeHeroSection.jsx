@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Star, Award, Mail } from 'lucide-react';
-import logo from '../../assets/images/logoED.png'
+import logo from '../../assets/images/logoED.png';
+
 export default function HomeHeroSection() {
   const [formData, setFormData] = useState({
     year: '',
@@ -19,7 +20,6 @@ export default function HomeHeroSection() {
     setIsSubmitting(true);
     setSubmitStatus('');
 
-    // Validate form
     if (!formData.name || !formData.phone || !formData.email) {
       setSubmitStatus('error');
       alert('Please fill in all required fields (Name, Phone, Email)');
@@ -28,14 +28,16 @@ export default function HomeHeroSection() {
     }
 
     try {
-      // Using EmailJS - You need to sign up at https://www.emailjs.com/
-      // Replace these with your actual EmailJS credentials
-      const serviceID = 'service_dcx6xug'; // Get from EmailJS dashboard
-      const templateID = 'template_wtpuleq'; // Get from EmailJS dashboard
-      const publicKey = 'VMJq2h4guP5mag8sP'; // Get from EmailJS dashboard
+      const serviceID = 'service_dcx6xug';
+      const templateID = 'template_wtpuleq';
+      const publicKey = 'VMJq2h4guP5mag8sP';
 
-      const emailData = {
-        to_email: 'sine4arshad@gmail.com', // Your recipient email
+      // Make sure these template param names exactly match what your EmailJS template uses
+      const templateParams = {
+        // If you want to control recipient from code, set to_email and make your template's To Email = {{to_email}}
+        to_email: 'ankitchandel858790@gmail.com',
+
+        // Common placeholders (match your template)
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -43,27 +45,33 @@ export default function HomeHeroSection() {
         make: formData.make,
         model: formData.model,
         part: formData.part,
-        message: `New Quote Request:\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nYear: ${formData.year}\nMake: ${formData.make}\nModel: ${formData.model}\nPart: ${formData.part}`
+
+        // message used by template's {{message}}
+        message: `Message from Enquery Form:
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Year: ${formData.year}
+Make: ${formData.make}
+Model: ${formData.model}
+Part: ${formData.part}`
       };
 
-      // Using fetch to send email via EmailJS
-      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           service_id: serviceID,
           template_id: templateID,
           user_id: publicKey,
-          template_params: emailData
+          template_params: templateParams
         })
       });
 
-      if (response.ok) {
+      // Helpful logging for debugging delivery failures
+      if (res.ok) {
         setSubmitStatus('success');
         alert('✅ Quote request submitted successfully! We will contact you soon.');
-        // Reset form
         setFormData({
           year: '',
           make: '',
@@ -74,7 +82,11 @@ export default function HomeHeroSection() {
           email: ''
         });
       } else {
-        throw new Error('Failed to send email');
+        // try to read error body for provider response
+        const text = await res.text();
+        console.error('EmailJS responded with non-OK:', res.status, text);
+        setSubmitStatus('error');
+        alert('❌ Failed to send request. Check console for EmailJS response.');
       }
     } catch (error) {
       console.error('Error sending email:', error);
@@ -85,16 +97,15 @@ export default function HomeHeroSection() {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e?.preventDefault?.();
     sendEmail();
   };
 
   const handleChange = (field, value) => {
-    setFormData({
-      ...formData,
-      [field]: value
-    });
+    setFormData(prev => ({ ...prev, [field]: value }));
   };
+
 
   const categories = [
     {
@@ -1145,16 +1156,15 @@ export default function HomeHeroSection() {
                   onChange={(e) => handleChange('email', e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border-2 border-white bg-white text-gray-800 placeholder-gray-500 focus:border-gray-900 focus:outline-none transition"
                 />
-
                 <button
-                  onClick={handleSubmit}
-                  disabled={isSubmitting}
-                  className={`w-full bg-gray-900 hover:bg-black text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg ${
-                    isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-                  }`}
-                >
-                  {isSubmitting ? 'SENDING...' : 'SEARCH'}
-                </button>
+                          onClick={handleSubmit}
+                          disabled={isSubmitting}
+                          className={`w-full bg-gray-900 hover:bg-black text-white font-bold py-4 px-6 rounded-lg ${
+                            isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                          }`}
+                        >
+                          {isSubmitting ? 'SENDING...' : 'SEARCH'}
+                        </button>
                 
                 {submitStatus === 'success' && (
                   <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg text-center">
