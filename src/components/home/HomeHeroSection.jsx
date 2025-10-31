@@ -30,14 +30,14 @@ export default function HomeHeroSection() {
     try {
       // Using EmailJS - You need to sign up at https://www.emailjs.com/
       // Replace these with your actual EmailJS credentials
-      const serviceID = 'YOUR_SERVICE_ID'; // Get from EmailJS dashboard
-      const templateID = 'YOUR_TEMPLATE_ID'; // Get from EmailJS dashboard
-      const publicKey = 'YOUR_PUBLIC_KEY'; // Get from EmailJS dashboard
+      const serviceID = 'service_dcx6xug'; // Get from EmailJS dashboard
+      const templateID = 'template_wtpuleq'; // Get from EmailJS dashboard
+      const publicKey = 'VMJq2h4guP5mag8sP'; // Get from EmailJS dashboard
 
       const emailData = {
-        to_email: 'info@ecodriveautoparts.store', // Your recipient email
-        from_name: formData.name,
-        from_email: formData.email,
+        to_email: 'sine4arshad@gmail.com', // Your recipient email
+        name: formData.name,
+        email: formData.email,
         phone: formData.phone,
         year: formData.year,
         make: formData.make,
