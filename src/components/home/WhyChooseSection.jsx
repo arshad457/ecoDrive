@@ -7,25 +7,25 @@ export default function WhyChooseSection() {
       id: 1,
       icon: User,
       title: 'Customer Service',
-      description: 'Our dedicated team prioritizes customer satisfaction, ensuring personalized assistance and quick response to queries.'
+      description: 'Our professional team is devoted to customer care, offering customized assistance and timely responses to all requests.'
     },
     {
       id: 2,
       icon: Truck,
       title: 'Fast Delivery',
-      description: 'Understanding your need for speed, we ensure that you get the parts on time, helping you to get back on the road faster.'
+      description: 'We understand your urgency and make sure you receive your parts promptly, getting you back on the road quickly'
     },
     {
       id: 3,
       icon: ShieldCheck,
       title: 'Warranty',
-      description: 'Eco Drive Auto Parts stands for product quality, offering a gold standard warranty, ensuring your parts are protected even after delivery.'
+      description: 'Eco Drive Auto Parts represents top-tier quality, backed by a gold standard warranty that safeguards your parts long after delivery.'
     },
     {
       id: 4,
       icon: Headphones,
       title: 'Interactive Support',
-      description: 'Our interactive support platform provides real-time assistance for product selection, order placement, and answering all queries.'
+      description: 'With our interactive support platform, you get real-time guidance for choosing products, placing orders, and resolving any questions.'
     }
   ];
 
@@ -45,8 +45,7 @@ export default function WhyChooseSection() {
             Why Choose Eco Drive Auto
           </h2>
           <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-4xl mx-auto px-4">
-            We are the leading supplier in the automotive industry, known as the foremost hub for auto parts like used engines and transmissions for sale, delivering comprehensive solutions fulfilling our customers' needs. Our inventory contains a wide range of high-quality auto parts meeting every specification need, as the best place to buy used engines near me. We have established a stable presence not in the local community but also across different locations, providing exceptional value to our clients. The experts properly inspect each of our auto parts to ensure superior performance, ensuring seamless integration with your vehicle, regardless of age or model.
-          </p>
+          We’re a trusted source for quality used engines and transmissions, offering reliable, inspected auto parts that fit any vehicle. With a wide inventory and expert testing, we deliver exceptional value and performance wherever you are.</p>
         </div>
 
         {/* Features Grid */}
@@ -77,7 +76,7 @@ export default function WhyChooseSection() {
         {/* Bottom Text */}
         <div className="text-center">
           <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4">
-            When it comes to auto parts, we are your one-stop solution. We understand that these components are essential investments, and that's why all our products come with a comprehensive warranty, seeding confidence in every purchase. Our auto parts like used engines with warranty offer peace of mind, which reflects our commitment to reliability and customer satisfaction.
+            
           </p>
         </div>
       </div>

@@ -5,32 +5,32 @@ export default function EngineShowcase() {
     {
       id: 1,
       brand: 'BMW ENGINE',
-      image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&h=400&fit=crop'
+      image: '/images/bmw.jpg'
     },
     {
       id: 2,
       brand: 'AUDI ENGINE',
-      image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&h=400&fit=crop'
+      image: '/images/audi.jpg'
     },
     {
       id: 3,
       brand: 'CHEVROLET ENGINE',
-      image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&h=400&fit=crop'
+      image: '/images/chevrolet.jpg'
     },
     {
       id: 4,
       brand: 'NISSAN ENGINE',
-      image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&h=400&fit=crop'
+      image: '/images/nissan_engien.jpg'
     },
     {
       id: 5,
       brand: 'FORD ENGINE',
-      image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&h=400&fit=crop'
+      image: '/images/ford.jpg'
     },
     {
       id: 6,
       brand: 'HONDA ENGINE',
-      image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&h=400&fit=crop'
+      image: '/images/honda.jpg'
     }
   ];
 
@@ -56,13 +56,13 @@ export default function EngineShowcase() {
                 <img
                   src={engine.image}
                   alt={engine.brand}
-                  className="w-full h-full object-cover"
+                  className="w-auto m-auto max-h-full object-cover"
                 />
               </div>
 
               {/* Label */}
-              <div className="bg-yellow-400 py-3 px-4">
-                <h3 className="text-gray-900 font-bold text-center text-sm uppercase">
+              <div className="bg-red-600 py-3 px-4">
+                <h3 className="text-white font-bold text-center text-sm uppercase">
                   {engine.brand}
                 </h3>
               </div>

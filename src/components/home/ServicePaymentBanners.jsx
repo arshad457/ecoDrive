@@ -22,11 +22,10 @@ export default function ServicePaymentBanners() {
             <div className="flex-1 text-center lg:text-left ">
               <h2 className="text-xl sm:text-3xl md:text-xl lg:text-2xl font-bold text-white mb-2 sm:mb-4 leading-tight">
                 PROVIDING FAST AND<br />
-                FRIENDLY SERVICE FOR<br />
-                <span className="text-yellow-400">OVER 50 YEARS!</span>
+                FRIENDLY SERVICE 
               </h2>
               <p className="text-gray-300 text-sm sm:text-base md:text-lg mt-4 max-w-2xl mx-auto lg:mx-0">
-                Trusted by thousands of customers for quality engines and transmissions
+                “Renowned by thousands of satisfied customers for delivering high-quality engines and transmissions.”
               </p>
             </div>
 

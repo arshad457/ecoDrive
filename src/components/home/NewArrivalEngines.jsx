@@ -100,7 +100,7 @@ export default function NewArrivalEngines() {
     {
       id: 1,
       name: '1988 Chevy Astro Engine (4.3L, VIN Z, 8th digit)',
-      image: prductImage1,
+      image: 'images/Chevy_Astro_Engine.jpg',
       miles: '60000',
       price: 2500,
       offerPrice: 999
@@ -108,7 +108,7 @@ export default function NewArrivalEngines() {
     {
       id: 2,
       name: '1987 Toyota Land Cruiser Engine 4.2L',
-      image: prductImage1,
+      image: 'images/Toyota_Land_Cruiser_Engine.jpg',
       miles: '102000',
       price: 3500,
       offerPrice: 1299
@@ -116,7 +116,7 @@ export default function NewArrivalEngines() {
     {
       id: 3,
       name: '1991 Acura Integra Transmission 1.8L T',
-      image: prductImage1,
+      image: 'images/Acura_Integra_Transmission.jpg',
       miles: '60000',
       price: 3700,
       offerPrice: 1650
@@ -124,7 +124,7 @@ export default function NewArrivalEngines() {
     {
       id: 4,
       name: '1991 Dodge D50 Engine 2.4L (VIN W, 8th digit)',
-      image: prductImage1,
+      image: 'images/Dodge_D50_Engine.jpg',
       miles: '60000',
       price: 2500,
       offerPrice: 900
@@ -132,7 +132,7 @@ export default function NewArrivalEngines() {
     {
       id: 5,
       name: '1992 Dodge Truck-150 Transmission (4WD)',
-      image: prductImage1,
+      image: 'images/Dodge_Truck_150_Transmission.jpg',
       miles: '60000',
       price: 1250,
       offerPrice: 1100
@@ -140,7 +140,7 @@ export default function NewArrivalEngines() {
     {
       id: 6,
       name: '1993 Chevy Truck-1500 Series Transmission 4L60',
-      image: prductImage1,
+      image: 'images/Chevy_Astro_Engine.jpg',
       miles: '60000',
       price: 850,
       offerPrice: 799
@@ -161,7 +161,7 @@ export default function NewArrivalEngines() {
           
 
           {/* Left Side - Product Grid */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 ">
               {products.map((product) => (
                 <div
@@ -226,7 +226,7 @@ export default function NewArrivalEngines() {
           <div className="lg:col-span-1 space-y-6">
             
             {/* 50% OFF Banner */}
-            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-6 sm:p-8 text-white shadow-2xl relative overflow-hidden">
+            {/* <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-6 sm:p-8 text-white shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
               
@@ -249,7 +249,7 @@ export default function NewArrivalEngines() {
                   </p>
                 </div>
 
-                {/* Product Images */}
+       
                 <div className="grid grid-cols-2 gap-3 mt-6">
                   <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 aspect-square flex items-center justify-center">
                     <div className="text-4xl">🔧</div>
@@ -259,10 +259,10 @@ export default function NewArrivalEngines() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Contact Banner */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 sm:p-8 text-white shadow-2xl">
+            {/* <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 sm:p-8 text-white shadow-2xl">
               <div className="text-center">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">
                   Can't find what you're looking for?
@@ -275,10 +275,10 @@ export default function NewArrivalEngines() {
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Phone className="w-5 h-5" />
-                  +1 804-800-6985
+                  +1 000-000-0000
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

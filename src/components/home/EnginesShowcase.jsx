@@ -110,10 +110,10 @@ export default function EnginesShowcase() {
         {/* Main Content Section */}
         <div className="mb-8 sm:mb-12 px-2 sm:px-0">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 text-center leading-tight px-2">
-            Used Engines & Transmissions – Guaranteed Performance
+            Reliable Used Engines & Transmissions – Guaranteed to Perform
           </h2>
           <p className="text-gray-600 text-center max-w-4xl mx-auto text-sm sm:text-base md:text-lg px-4">
-            Eco Drive Auto mein, hum aapko top-quality used engines & transmissions provide karte hain — har part professionally inspected, low mileage, aur ready-to-install hota hai.
+            Eco Drive Auto provides high-grade used engines and transmissions — every unit is thoroughly checked, low in mileage, and ready to be installed.
           </p>
         </div>
 
