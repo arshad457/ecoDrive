@@ -133,40 +133,7 @@ export default function HomeHeroSection() {
 
   return (
     <div className=" min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      {/* Top Bar */}
-      <div className="bg-gray-950 text-white py-3 px-4">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
-          <div className="flex flex-wrap gap-4 text-sm ml-auto">
-            <a href="tel:+18048006985" className="flex items-center gap-2 hover:text-amber-400 transition">
-              <Phone size={16} />
-              <span>Toll Free: +1-000-000-0000</span>
-            </a>
-            <a href="mailto:info@ecodriveautoparts.store" className="flex items-center gap-2 hover:text-amber-400 transition">
-              <Mail size={16} />
-              <span>info@ecodriveautoparts.store</span>
-            </a>
-          </div>
-          {/* <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-md text-sm font-semibold transition">
-            Send Us Query
-          </button> */}
-        </div>
-      </div>
 
-      {/* Navigation */}
-      {/* <nav className="bg-white shadow-md py-1` px-4">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
-            <img src={logo} alt="" className='max-w-[200px]' />
-          </div>
-          <div className="flex gap-6 text-sm font-semibold">
-            <a href="#" className="text-gray-700 hover:text-amber-500 transition">HOME</a>
-            <a href="#" className="text-gray-700 hover:text-amber-500 transition">AUTO PARTS</a>
-            <a href="#" className="text-gray-700 hover:text-amber-500 transition">BRANDS</a>
-            <a href="#" className="text-gray-700 hover:text-amber-500 transition">CONTACT</a>
-          </div>
-        </div>
-      </nav> */}
-      <NavBar />
 
       {/* Hero Section */}
       <div className="relative py-16 px-4">
@@ -241,7 +208,7 @@ export default function HomeHeroSection() {
                     <Phone className="w-8 h-8 text-red-600" />
                   </div>
                   <div className="text-white">
-                    <div className="text-3xl font-bold">999-999-9999</div>
+                    <div className="text-3xl font-bold">+1 267 263 7968</div>
                     <div className="text-sm opacity-90">Call us now for instant quote</div>
                   </div>
                 </div>

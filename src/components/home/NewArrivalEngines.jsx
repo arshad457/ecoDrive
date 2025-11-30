@@ -99,51 +99,51 @@ export default function NewArrivalEngines() {
   const products = [
     {
       id: 1,
-      name: '1988 Chevy Astro Engine (4.3L, VIN Z, 8th digit)',
-      image: 'images/Chevy_Astro_Engine.jpg',
-      miles: '60000',
-      price: 2500,
-      offerPrice: 999
+      name: '2014 Ford F-150 Engine (3.5L EcoBoost, VIN T)',
+      image: 'images/2014_Ford_Engine.jpg',
+      miles: '78,000',
+      price: 4800,
+      offerPrice: 2999
     },
     {
       id: 2,
-      name: '1987 Toyota Land Cruiser Engine 4.2L',
-      image: 'images/Toyota_Land_Cruiser_Engine.jpg',
-      miles: '102000',
-      price: 3500,
-      offerPrice: 1299
+      name: '2016 Honda Accord Engine (2.4L, VIN K, 8th digit)',
+      image: 'images/linting2.jpg',
+      miles: '62,000',
+      price: 3700,
+      offerPrice: 2250
     },
     {
       id: 3,
-      name: '1991 Acura Integra Transmission 1.8L T',
-      image: 'images/Acura_Integra_Transmission.jpg',
+      name: '2012 Toyota Tacoma Transmission (Automatic, 4WD)',
+      image: 'images/toyota3.jpg',
       miles: '60000',
       price: 3700,
       offerPrice: 1650
     },
     {
       id: 4,
-      name: '1991 Dodge D50 Engine 2.4L (VIN W, 8th digit)',
-      image: 'images/Dodge_D50_Engine.jpg',
-      miles: '60000',
-      price: 2500,
-      offerPrice: 900
+      name: '2015 Nissan Altima Engine (2.5L, VIN A)',
+      image: 'images/Nissan_QR25DE_Engine.jpg',
+      miles: '68,000',
+      price: 2900,
+      offerPrice: 1950
     },
     {
       id: 5,
-      name: '1992 Dodge Truck-150 Transmission (4WD)',
-      image: 'images/Dodge_Truck_150_Transmission.jpg',
-      miles: '60000',
-      price: 1250,
-      offerPrice: 1100
+      name: '2017 Chevy Silverado 1500 Transmission (6-Speed, 4x4)',
+      image: 'images/Chevy_Silverado.jpg',
+      miles: '72000',
+      price: 4250,
+      offerPrice: 2500
     },
     {
       id: 6,
-      name: '1993 Chevy Truck-1500 Series Transmission 4L60',
-      image: 'images/Chevy_Astro_Engine.jpg',
-      miles: '60000',
-      price: 850,
-      offerPrice: 799
+      name: '2018 Jeep Grand Cherokee Engine (3.6L V6)',
+      image: 'images/jeep-grand.jpg',
+      miles: '65000',
+      price: 4800,
+      offerPrice: 2799
     }
   ];
 

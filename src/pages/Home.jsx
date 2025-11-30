@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeHeroSection from '../components/home/HomeHeroSection'
-import EnginesShowcase from '../components/home/EnginesShowcase'
+// import EnginesShowcase from '../components/home/EnginesShowcase'
 import CustomerReviews from '../components/home/CustomerReviews'
 import NewArrivalEngines from '../components/home/NewArrivalEngines'
 import ServicePaymentBanners from '../components/home/ServicePaymentBanners'
@@ -13,14 +13,14 @@ const Home = () => {
   return (
   <>
     <HomeHeroSection />
-    <EnginesShowcase />
+    {/* <EnginesShowcase /> */}
     <CustomerReviews />
     <NewArrivalEngines />
     <ServicePaymentBanners />
     <EngineShowcase />
     <WhyChooseSection />
     <CarBrandsSection />
-    <FooterSection />
+    {/* <FooterSection /> */}
   </>
   )
 }

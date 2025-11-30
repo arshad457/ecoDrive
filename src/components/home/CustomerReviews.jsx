@@ -30,7 +30,7 @@ export default function CustomerReviews() {
     },
     {
       id: 4,
-      name: 'John Smith',
+      name: 'Andrew Smith',
       role: '',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
       rating: 5,
@@ -38,7 +38,7 @@ export default function CustomerReviews() {
     },
     {
       id: 5,
-      name: 'Sarah Williams',
+      name: 'Paula Williams',
       role: '',
       avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150',
       rating: 5,
@@ -46,7 +46,7 @@ export default function CustomerReviews() {
     },
     {
       id: 6,
-      name: 'Michael Chen',
+      name: 'Demonsh Chen',
       role: '',
       avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150',
       rating: 4.5,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Youtube, ArrowRight, Award, Shield, Truck, CreditCard } from 'lucide-react';
 import logo from '../../assets/images/logoED.png'
+import { Link } from 'react-router';
 export default function FooterSection() {
   const currentYear = new Date().getFullYear();
 
@@ -11,6 +12,10 @@ export default function FooterSection() {
     'Cylinder Heads',
     'Engine Parts',
     'Transmission Parts'
+  ];
+  const campanyLink = [
+    {label:'Privacy Policy', link:'/privacy'},
+    {label:'Term & Condition', link:'/termandcondition'},
   ];
 
   const brands = [
@@ -25,19 +30,26 @@ export default function FooterSection() {
      
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
                <img src={logo} alt="" className='max-w-[200px]' />
             </div>
+            <div className="flex items-start space-x-3">
+                              <MapPin className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                              <div>
+                                <p className="font-semibold text-white text-sm md:text-base">ECODRIVE AUTO PARTS LLC</p>
+                                <p className="text-white text-sm md:text-base"> 30 N GOULD ST STE R SHERIDAN, WY 82801</p>
+                              </div>  
+                            </div>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-              Your trusted source for quality used engines and transmissions. With over 50 years of experience, we provide reliable auto parts nationwide.
+              Your trusted source for quality used engines and transmissions. With over 5+ years of experience, we provide reliable auto parts nationwide.
             </p>
             
             {/* Social Media */}
-            <div className="space-y-3 mb-6">
+            {/* <div className="space-y-3 mb-6">
               <p className="text-sm font-semibold text-gray-300">Follow Us:</p>
               <div className="flex gap-3">
                 <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all transform hover:scale-110">
@@ -56,7 +68,7 @@ export default function FooterSection() {
                   <Youtube className="w-5 h-5" />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Products */}
@@ -73,7 +85,21 @@ export default function FooterSection() {
               ))}
             </ul>
           </div>
-
+<div>
+            <h4 className="text-lg font-bold mb-4 text-white">About Company</h4>
+            <ul className="space-y-2.5">
+              {campanyLink.map((data, index) => (
+                
+                <li key={index}>
+                 
+                  <Link className='text-gray-400 hover:text-white text-sm flex items-center gap-2 transition-colors group' to={data.link}>
+                    <ArrowRight className="w-4 h-4 text-purple-500 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" />
+                    {data.label}
+                    </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-bold mb-4 text-white">Contact Us</h4>
@@ -84,8 +110,8 @@ export default function FooterSection() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 mb-1">Call Us:</p>
-                  <a href="tel:+18048006985" className="text-white font-bold hover:text-blue-400 transition-colors">
-                    +1 999-999-9999
+                  <a href="tel:+12672637968" className="text-white font-bold hover:text-blue-400 transition-colors">
+                    +1 267 263 7968
                   </a>
                 </div>
               </div>
@@ -115,7 +141,7 @@ export default function FooterSection() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-gray-400 text-sm text-center">
-              © {currentYear} Eco Drive Auto parts. All rights reserved. | Trusted since 1958
+              © {currentYear} Eco Drive Auto parts. All rights reserved.
             </p>
           </div>
         </div>
