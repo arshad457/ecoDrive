@@ -90,7 +90,7 @@ export default function FooterSection() {
             <ul className="space-y-2.5">
               {campanyLink.map((data, index) => (
                 
-                <li key={index}>
+                <li key={index}  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                  
                   <Link className='text-gray-400 hover:text-white text-sm flex items-center gap-2 transition-colors group' to={data.link}>
                     <ArrowRight className="w-4 h-4 text-purple-500 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" />
