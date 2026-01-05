@@ -14,8 +14,8 @@ export default function FooterSection() {
     'Transmission Parts'
   ];
   const campanyLink = [
-    {label:'Privacy Policy', link:'/privacy'},
-    {label:'Term & Condition', link:'/termandcondition'},
+    {label:'Privacy Policy', link:'privacy'},
+    {label:'Term & Condition', link:'termandcondition'},
   ];
 
   const brands = [
@@ -110,8 +110,8 @@ export default function FooterSection() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 mb-1">Call Us:</p>
-                  <a href="tel:+12672637968" className="text-white font-bold hover:text-blue-400 transition-colors">
-                    +1 267 263 7968
+                  <a href="tel:+12012011781" className="text-white font-bold hover:text-blue-400 transition-colors">
+                    +1 (201) 201-1781
                   </a>
                 </div>
               </div>

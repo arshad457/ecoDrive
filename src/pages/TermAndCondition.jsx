@@ -159,10 +159,10 @@ const TermAndCondition = () => {
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                   ECODRIVE AUTO PARTS LLC is not responsible for indirect or consequential damages arising from product use, delivery delays, or service interruptions.
                 </p>
-              </div>
+              </div> 
             </section>
 
-           {/* Contact Information */}
+           {/* Contact Information */} 
           <section className="mb-8">
             <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
               <span className="w-2 h-8 bg-green-600 mr-3"></span>
@@ -189,8 +189,8 @@ SHERIDAN, WY 82801</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <a href="tel: +12672637968" className="text-green-600 hover:text-green-700 text-sm md:text-base">
-                    +1 (267) 263-7968
+                  <a href="tel: +12012011781" className="text-green-600 hover:text-green-700 text-sm md:text-base">
+                    +1 (201) 201-1781
                   </a>
                 </div>
               </div>

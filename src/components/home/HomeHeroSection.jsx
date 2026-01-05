@@ -208,7 +208,7 @@ export default function HomeHeroSection() {
                     <Phone className="w-8 h-8 text-red-600" />
                   </div>
                   <div className="text-white">
-                    <div className="text-3xl font-bold">+1 267 263 7968</div>
+                    <div className="text-3xl font-bold">+1 (201) 201-1781</div>
                     <div className="text-sm opacity-90">Call us now for instant quote</div>
                   </div>
                 </div>

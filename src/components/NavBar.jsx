@@ -8,9 +8,9 @@ const NavBar = () => {
        <div className="bg-gray-950 text-white py-3 px-4">
               <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
                 <div className="flex flex-wrap gap-4 text-sm ml-auto">
-                  <a href="tel:+12672637968" className="flex items-center gap-2 hover:text-amber-400 transition">
+                  <a href="tel:+12012011781" className="flex items-center gap-2 hover:text-amber-400 transition">
                     <Phone size={16} />
-                    <span>Toll Free:  +1 (267) 263-7968</span>
+                    <span>Toll Free:  +1 (201) 201-1781</span>
                   </a>
                   <a href="mailto:info@ecodriveautoparts.store" className="flex items-center gap-2 hover:text-amber-400 transition">
                     <Mail size={16} />
