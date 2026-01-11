@@ -87,7 +87,7 @@ export default function NewArrivalEngines() {
     } catch (error) {
       console.error('Error sending email:', error);
       setSubmitStatus('error');
-      alert('❌ Failed to send inquiry. Please call us directly at +1 804-800-6985');
+      alert('❌ Failed to send inquiry. Please call us directly at +1 (201) 201-1781');
     } finally {
       setIsSubmitting(false);
     }
@@ -271,11 +271,11 @@ export default function NewArrivalEngines() {
                   Call us now on
                 </p>
                 <a 
-                  href="tel:+18048006985"
+                  href="tel:tel:tel:+12012011781"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Phone className="w-5 h-5" />
-                  +1 000-000-0000
+                  +1 (201) 201-1781
                 </a>
               </div>
             </div> */}
@@ -315,9 +315,9 @@ export default function NewArrivalEngines() {
                   <h3 className="text-xl font-bold mb-2">
                     Free Shipping on<br />Engine/Transmission in Delhi
                   </h3>
-                  <a href="tel:+18048006985" className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-bold text-xl transition-colors">
+                  <a href="tel:+12012011781" className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-bold text-xl transition-colors">
                     <Phone className="w-5 h-5" />
-                    804-800-6985
+                    +1 (201) 201-1781
                   </a>
                 </div>
               </div>

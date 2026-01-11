@@ -92,7 +92,7 @@ export default function HomeHeroSection() {
     } catch (error) {
       console.error('Error sending email:', error);
       setSubmitStatus('error');
-      alert('❌ Failed to send request. Please try calling us directly at 804-800-6985');
+      alert('❌ Failed to send request. Please try calling us directly at +1 (201) 201-1781');
     } finally {
       setIsSubmitting(false);
     }
@@ -1156,7 +1156,7 @@ export default function HomeHeroSection() {
                     
                     {submitStatus === 'error' && (
                       <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg text-center text-sm">
-                        ❌ Please call us at 804-800-6985
+                        ❌ Please call us at +1 (201) 201-1781
                       </div>
                     )}
                   </div>
