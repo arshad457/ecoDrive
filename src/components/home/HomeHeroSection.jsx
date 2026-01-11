@@ -1135,6 +1135,9 @@ export default function HomeHeroSection() {
                       onChange={(e) => handleChange('email', e.target.value)}
                       className="w-full px-4 py-3 rounded-lg border-2 border-white bg-white text-gray-800 placeholder-gray-500 focus:border-gray-900 focus:outline-none transition"
                     />
+                    <div className="text-xs text-white">
+                    <input type='checkbox' value={1} className="mb-2 "/> By checking this box, I agree to receive conversational SMS messages from EcoDrive Auto Parts LLC related to my inquiry, including quotes, order updates, and shipping notifications. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance. View our Privacy Policy: https://ecodriveautoparts.store/privacy
+                    </div> 
                     <button
                               onClick={handleSubmit}
                               disabled={isSubmitting}

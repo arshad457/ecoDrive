@@ -126,7 +126,10 @@ const TermAndCondition = () => {
               </h3>
               <div className="ml-0 md:ml-5">
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                  By providing your phone number or contacting us, you consent to receiving messages related to orders, updates, and support. You may opt out anytime by replying <span className="font-semibold bg-gray-100 px-2 py-1 rounded">STOP</span>.
+                  By providing your mobile phone number through our website or during phone communication, you consent to receive conversational SMS messages from EcoDrive Auto Parts LLC related to your inquiry, including quotes, product availability, order confirmations, shipping updates, and customer support responses.
+                </p>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed mt-3">
+                  Message frequency may vary. Message and data rates may apply. You may opt out of receiving SMS messages at any time by replying STOP or request assistance by replying HELP. Consent to receive SMS messages is not a condition of purchase.
                 </p>
               </div>
             </section>
@@ -139,7 +142,8 @@ const TermAndCondition = () => {
               </h3>
               <div className="ml-0 md:ml-5 space-y-3">
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                  We do not sell, share, or distribute personal information to third parties for marketing. Customer information is used only for order fulfillment and support.
+                  We do not sell, share, or distribute personal information, including mobile phone numbers, to third parties for marketing purposes. Customer information is used only for order fulfillment, customer support, and service-related communication. Our Privacy Policy explains how your information is collected and used and is available at https://ecodriveautoparts.store/privacy.
+
                 </p>
                 <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-600">
                   <p className="text-gray-700 text-sm md:text-base">

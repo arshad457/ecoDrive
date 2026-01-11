@@ -82,13 +82,8 @@ const Privacy = () => {
               Information Sharing and Disclosure
             </h3>
             <div className="ml-0 md:ml-5 space-y-3">
-              <p className="text-gray-700 text-sm md:text-base">We do not sell your personal information. We may share your information with:</p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 text-sm md:text-base">
-                <li>Service providers who assist in our operations</li>
-                <li>Shipping and payment processing partners</li>
-                <li>Legal authorities when required by law</li>
-                <li>Business partners with your explicit consent</li>
-              </ul>
+              <p className="text-gray-700 text-sm md:text-base">Mobile phone numbers collected for SMS communications are not sold, shared, or distributed to third parties for marketing purposes.</p>
+              
             </div>
           </section>
 
